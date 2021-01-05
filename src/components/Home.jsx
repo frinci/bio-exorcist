@@ -9,7 +9,9 @@ const Home = () => {
         <div>
             <div className="mainBox">
                 <div>
-                    <img className='beetleHead' src={headshot} alt="headshot of Beetlejuice with Beetlejuice signe below"/>
+                    <a href="https://wolfinger.bigcartel.com/product/beetlejuice" target="_blank">
+                        <img className='beetleHead' src={headshot} alt="headshot of Beetlejuice with Beetlejuice signe below"/>
+                    </a>
                 </div>
 
                 <div className="mainText">
@@ -21,11 +23,11 @@ const Home = () => {
                     <ul className='mainPoints'>
                         <li>Troubled by the Living?</li>
                         <li>Is death a problem and not the solution?</li>
-                        <li>Unahppy with Eternity?</li>
+                        <li>Unhappy with Eternity?</li>
                         <li>Having difficulty adjusting?</li>
                     </ul>
 
-                    <img src={call} alt="Call Betelgeuse Betelgeuse Betelgeuse!"/>
+                    <img src={call} alt="Call Betelgeuse! Betelgeuse! Betelgeuse!"/>
                 </div>
             </div>
 
@@ -35,6 +37,8 @@ const Home = () => {
                     <h2>About Beetlejuice</h2>
                     <h3>Also Spelled: Betelgeuse</h3>
                 </div>
+
+                <a id="About"></a>
 
                 <div className='aboutText'>
                     <p>Having trouble with the living? You tired of having your home violated? You want to get Reid of them pesky living critters once and for all? Well, come on down and see me, folks. I’m the afterlife’s leading bio-exorcist! </p>
@@ -52,8 +56,10 @@ const Home = () => {
             <div className='resumeBox'>
                 <h2>Qualifications</h2>
 
+                <a id="Skills"></a>
+
                 <div className='skillBox'>
-                    <div>
+                    <div className='edu'>
                         <h3>Education</h3>
                         <ul>
                             <li>Julliard</li>
@@ -61,7 +67,7 @@ const Home = () => {
                         </ul>
                     </div>
 
-                    <div>
+                    <div className='skills'>
                         <h3>Related Skills</h3>
                         <ul>
                             <li>Lear to throw your voice! Fool your friends! Fun at parties!</li>

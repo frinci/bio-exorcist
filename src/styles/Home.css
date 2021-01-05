@@ -1,16 +1,20 @@
 h1 {
     font-family: 'Frijole', cursive;
     color: #8872C4;
+    margin-bottom: -30px;
 }
 
 h2 {
     font-family: 'Frijole', cursive;
     color: white;
+    font-size: 30px;
+    margin-bottom: -20px;
 }
 
 h3 {
     font-family: 'Frijole', cursive;
     color: white;
+    font-size: 25px;
 }
 
 p {
@@ -27,7 +31,10 @@ span {
     top: 80px;
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .beetleHead {
@@ -49,6 +56,7 @@ span {
     font-family: 'Frijole', cursive;
     color: white;
     list-style-type: none;
+    margin-top: 20px;
 }
 
 .mainText img {
@@ -62,8 +70,30 @@ span {
     flex-direction: column;
     background: #353639;
     width: 100vw;
-    height: 500px;
     margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.aboutText {
+    max-width: 900px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.aboutText h2 {
+    text-align: center;
+}
+
+.resumeBox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .resumeBox h2 {
@@ -73,6 +103,16 @@ span {
 .skillBox {
     display: flex;
     justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.edu, .skills {
+    max-width: 400px;
+}
+
+.skills {
+    padding-left: 30px;
 }
 
 .skillBox ul {
