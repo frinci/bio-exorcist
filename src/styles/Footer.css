@@ -1,0 +1,14 @@
+footer {
+    position: absolute;
+    width: 100%;
+    background: #353639;
+    height: 50px;
+}
+
+footer p {
+    font-size: 13px;
+    font-family: Baskerville;
+    color: #919191;
+    opacity: .5;
+    text-align: center;
+}

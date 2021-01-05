@@ -1,0 +1,82 @@
+h1 {
+    font-family: 'Frijole', cursive;
+    color: #8872C4;
+}
+
+h2 {
+    font-family: 'Frijole', cursive;
+    color: white;
+}
+
+h3 {
+    font-family: 'Frijole', cursive;
+    color: white;
+}
+
+p {
+    font-family: Baskerville;
+    color: white
+}
+
+span {
+    font-weight: bold;
+}
+
+.mainBox {
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.beetleHead {
+    height: 600px;
+}
+
+.mainText {
+    text-align: center;
+    padding-left: 40px;
+}
+
+.mainHeading {
+    align-items: center;
+}
+
+.mainPoints {
+    flex-direction: column;
+    text-align: left;
+    font-family: 'Frijole', cursive;
+    color: white;
+    list-style-type: none;
+}
+
+.mainText img {
+    height: 200px
+}
+
+.aboutBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #353639;
+    width: 100vw;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.resumeBox h2 {
+    text-align: center;
+}
+
+.skillBox {
+    display: flex;
+    justify-content: center;
+}
+
+.skillBox ul {
+    font-family: Baskerville;
+    color: white;
+}
+

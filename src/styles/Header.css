@@ -1,0 +1,39 @@
+nav {
+    background: #353639;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    z-index: 10;
+}
+
+nav img {
+    height: 65px;
+    position: absolute;
+    margin-top: 3px;
+    left: 1%;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    right: 3%;
+    top: 15px;
+}
+
+li a{
+    font-family: 'Frijole', cursive;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+li a:hover {
+    color: #81B747
+ }
+
+
