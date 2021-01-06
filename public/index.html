@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css">
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -43,22 +44,20 @@
     -->
 
     <script type="text/javascript">
-      // 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1609826733.2572384
+      // 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1609910355.4438696
       !function(n,r,e,t,c){var i,o="Promise"in n,u={then:function(){return u},catch:function(n){
       return n(new Error("Airship SDK Error: Unsupported browser")),u}},s=o?new Promise((function(n,r){i=function(e,t){e?r(e):n(t)}})):u
       ;s._async_setup=function(n){if(o)try{i(null,n(c))}catch(n){i(n)}},n[t]=s;var a=r.createElement("script");a.src=e,a.async=!0,a.id="_uasdk",
-      a.rel=t,r.head.appendChild(a)}(window,document,'https://aswpsdkus.com/notify/v1/ua-sdk.min.js',
+      a.rel=t,r.head.appendChild(a)}(window,document,'https://web-sdk.urbanairship.com/notify/v1/ua-sdk.min.js',
         'UA', {
-          vapidPublicKey: 'BEiMHEzbt1qWH0H3t6ieKHoG0AgvuZOQWcmvAl-LcAVsQHoZqdlfYfDi5MOOVKQOA1ubCrakLsTXO96Wlfxj7po=',
-          appKey: 'KXFWxG6nTfaXgXbUTgoQRg',
-          token: 'MTpLWEZXeEc2blRmYVhnWGJVVGdvUVJnOkhxNVNVM1UzVEIzOUo5YktlS2trUXNadXBzYXdzYy1uUFROVjRXN1Zmc1E',
-          workerUrl: '/push-worker.js'
-        }); 
-        
-    </script>
+          vapidPublicKey: 'BMbeJ1ehcdb-GsYBIB32YtAFKPxa9CNZIQDdLmZhH0kchB5PN_6kr61yGI9E3VnhLYG_Xpy_bpJ3p-57BnCu1qk=',
+          appKey: 'omzMcysgTXe5ihgOxHWwbw',
+          token: 'MTpvbXpNY3lzZ1RYZTVpaGdPeEhXd2J3Om5WUkQxcEJNcW5ac3piT1VvMnhYV0ZEdU5qNlF2Nmx5SVNmQzlvWS1HREk'
+        });
+      
+      </script>
 
-    <script type="text/javascript">
-
+    <!-- <script type="text/javascript">
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
           navigator.serviceWorker.register('/push-worker.js').then(function(registration) {
@@ -70,7 +69,11 @@
             });
         });
       }
-    </script>
+
+      fetch(url, {
+        credentials: 'include'
+      })
+    </script> -->
 
   </body>
 

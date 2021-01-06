@@ -28,7 +28,10 @@ const Home = () => {
                         <li>Having difficulty adjusting?</li>
                     </ul>
 
-                    <img src={call} alt="Call Betelgeuse! Betelgeuse! Betelgeuse!"/>
+                    <div className='callNow'>
+                        <img src={call} alt="Call Betelgeuse! Betelgeuse! Betelgeuse!"/>
+                    </div>
+
                 </div>
             </div>
 
@@ -71,7 +74,7 @@ const Home = () => {
                     <div className='skills'>
                         <h3>Related Skills</h3>
                         <ul>
-                            <li>Lear to throw your voice! Fool your friends! Fun at parties!</li>
+                            <li>Learn to throw your voice! Fool your friends! Fun at parties!</li>
                             <li>Life long traveller</li>
                             <li>Survived the Plague ( and had a pretty good time during that!)</li>
                             <li>Seen “The Exorcist” about 167 times (and it keeps getting funnier every single time I see it!)</li>
