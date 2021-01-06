@@ -7,6 +7,7 @@ import call from '../images/callNow.png'
 const Home = () => {
     return (
         <div>
+
             <div className="mainBox">
                 <div>
                     <a href="https://wolfinger.bigcartel.com/product/beetlejuice" target="_blank">
