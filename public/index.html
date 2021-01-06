@@ -51,30 +51,26 @@
         'UA', {
           vapidPublicKey: 'BEiMHEzbt1qWH0H3t6ieKHoG0AgvuZOQWcmvAl-LcAVsQHoZqdlfYfDi5MOOVKQOA1ubCrakLsTXO96Wlfxj7po=',
           appKey: 'KXFWxG6nTfaXgXbUTgoQRg',
-          token: 'MTpLWEZXeEc2blRmYVhnWGJVVGdvUVJnOkhxNVNVM1UzVEIzOUo5YktlS2trUXNadXBzYXdzYy1uUFROVjRXN1Zmc1E'
+          token: 'MTpLWEZXeEc2blRmYVhnWGJVVGdvUVJnOkhxNVNVM1UzVEIzOUo5YktlS2trUXNadXBzYXdzYy1uUFROVjRXN1Zmc1E',
+          workerUrl: '/push-worker.js'
         }); 
+        
     </script>
 
-      <script type="text/javascript">
-        app.get("/push-worker.js", (req, res) => {
-          res.sendFile(path.resolve(__dirname, "public", "service-worker.js"));
-        });
-        app.get("*", function response(req, res) {
-          res.sendFile(path.join(__dirname, "public", "index.html"));
-        });
+    <script type="text/javascript">
 
-        if ('serviceWorker' in navigator) {
-          window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/push-worker.js').then(function(registration) {
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/push-worker.js').then(function(registration) {
               // Registration was successful
-              console.log('ServiceWorker registration successful with scope: ', registration.scope);
-            }, function(err) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
               // registration failed :(
               console.log('ServiceWorker registration failed: ', err);
             });
-          });
-        }
-      </script>
+        });
+      }
+    </script>
 
   </body>
 
