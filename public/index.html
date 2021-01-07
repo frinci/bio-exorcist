@@ -51,12 +51,47 @@
         'UA', {
           vapidPublicKey: 'BMbeJ1ehcdb-GsYBIB32YtAFKPxa9CNZIQDdLmZhH0kchB5PN_6kr61yGI9E3VnhLYG_Xpy_bpJ3p-57BnCu1qk=',
           appKey: 'omzMcysgTXe5ihgOxHWwbw',
-          token: 'MTpvbXpNY3lzZ1RYZTVpaGdPeEhXd2J3Om5WUkQxcEJNcW5ac3piT1VvMnhYV0ZEdU5qNlF2Nmx5SVNmQzlvWS1HREk'
-        });
-      
-      </script>
+          token: 'MTpvbXpNY3lzZ1RYZTVpaGdPeEhXd2J3Om5WUkQxcEJNcW5ac3piT1VvMnhYV0ZEdU5qNlF2Nmx5SVNmQzlvWS1HREk',
+          dataCollectionOptInEnabled: true
+      });
 
-    <!-- <script type="text/javascript">
+      UA.then(sdk => {
+        sdk.plugins.load('html-prompt', 'https://aswpsdkus.com/notify/v1/ua-html-prompt.min.js', {
+          stylesheet: 'https://bio\u002Dexorcist.netlify.app/home.css',
+          askAgainDelay: 3600,
+          auto: true,
+          type: 'alert',
+
+          i18n: {
+            en: {
+              title: 'Opt in to Bio-Exorcism Afterlife Deals',
+              message: 'Get your own bio-exorcism deals, catered to your specific needs!',
+              accept: 'Beetlejuice! Beetlejuice! Beetlejuice!',
+              deny: "I'll scare them myself"
+            }
+          }
+        })
+        .then(plugin => plugin.prompt())
+      });
+
+      // UA.then(sdk => {
+
+      //   sdk.getChannel().then(channel => {
+      //     // Return the current Named User
+      //     channel.namedUser.id  // Returns null or string
+
+      //     // Set the Named User to a String
+      //     channel.namedUser.set(name) // associates this channel with a named user
+
+      //     // Remove the currently associated Named User
+      //     channel.namedUser.remove() // Disassociates the channel from the named user
+      //     // Returns true if successful
+      //   })
+      // })
+      
+    </script>
+
+    <script type="text/javascript">
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
           navigator.serviceWorker.register('/push-worker.js').then(function(registration) {
@@ -68,11 +103,7 @@
             });
         });
       }
-
-      fetch(url, {
-        credentials: 'include'
-      })
-    </script> -->
+    </script>
 
   </body>
 
