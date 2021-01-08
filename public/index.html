@@ -51,7 +51,7 @@
       'UA', {
         
         // Only needed when used on insecure hosts:
-        secureIframeUrl: '../../src/registration-page.html',
+        secureIframeUrl: './registration-page.html',
 
         vapidPublicKey: 'BMbeJ1ehcdb-GsYBIB32YtAFKPxa9CNZIQDdLmZhH0kchB5PN_6kr61yGI9E3VnhLYG_Xpy_bpJ3p-57BnCu1qk=',
         appKey: 'omzMcysgTXe5ihgOxHWwbw',
@@ -63,34 +63,18 @@
           stylesheet: 'https://bio\u002Dexorcist.netlify.app/home.css',
           askAgainDelay: 3600,
           auto: true,
-          type: 'alert',
 
           i18n: {
             en: {
               title: 'Opt in to Bio-Exorcism Afterlife Deals',
               message: 'Get your own bio-exorcism deals, catered to your specific needs!',
-              accept: 'Beetlejuice! Beetlejuice! Beetlejuice!',
-              deny: "I'll scare them myself"
+              bubble: 'Unlock permission to allow Afterlife notifications',
+              button: 'Allow Beetlejuice! Beetlejuice! Beetlejuice!'
             }
           }
         })
         .then(plugin => plugin.prompt())
       });
-
-      // UA.then(sdk => {
-
-      //   sdk.getChannel().then(channel => {
-      //     // Return the current Named User
-      //     channel.namedUser.id  // Returns null or string
-
-      //     // Set the Named User to a String
-      //     channel.namedUser.set(name) // associates this channel with a named user
-
-      //     // Remove the currently associated Named User
-      //     channel.namedUser.remove() // Disassociates the channel from the named user
-      //     // Returns true if successful
-      //   })
-      // })
       
     </script>
 
