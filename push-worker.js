@@ -1,4 +1,4 @@
-// 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1609910355.4438696
+// 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1610057390.8782036
 importScripts('https://aswpsdkus.com/notify/v1/ua-sdk.min.js')
 uaSetup.worker(self, {
   defaultIcon: 'https://bio\u002Dexorcist.netlify.app/static/media/beetlejuiceLogo.cbbdf772.png',

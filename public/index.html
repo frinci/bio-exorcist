@@ -43,20 +43,23 @@
     -->
 
     <script type="text/javascript">
-      // 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1609910355.4438696
-      !function(n,r,e,t,c){var i,o="Promise"in n,u={then:function(){return u},catch:function(n){
-      return n(new Error("Airship SDK Error: Unsupported browser")),u}},s=o?new Promise((function(n,r){i=function(e,t){e?r(e):n(t)}})):u
-      ;s._async_setup=function(n){if(o)try{i(null,n(c))}catch(n){i(n)}},n[t]=s;var a=r.createElement("script");a.src=e,a.async=!0,a.id="_uasdk",
-      a.rel=t,r.head.appendChild(a)}(window,document,'https://aswpsdkus.com/notify/v1/ua-sdk.min.js',
-        'UA', {
-          vapidPublicKey: 'BMbeJ1ehcdb-GsYBIB32YtAFKPxa9CNZIQDdLmZhH0kchB5PN_6kr61yGI9E3VnhLYG_Xpy_bpJ3p-57BnCu1qk=',
-          appKey: 'omzMcysgTXe5ihgOxHWwbw',
-          token: 'MTpvbXpNY3lzZ1RYZTVpaGdPeEhXd2J3Om5WUkQxcEJNcW5ac3piT1VvMnhYV0ZEdU5qNlF2Nmx5SVNmQzlvWS1HREk',
-          dataCollectionOptInEnabled: true
+    // 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1610057390.8782036
+    !function(n,r,e,t,c){var i,o="Promise"in n,u={then:function(){return u},catch:function(n){
+    return n(new Error("Airship SDK Error: Unsupported browser")),u}},s=o?new Promise((function(n,r){i=function(e,t){e?r(e):n(t)}})):u
+    ;s._async_setup=function(n){if(o)try{i(null,n(c))}catch(n){i(n)}},n[t]=s;var a=r.createElement("script");a.src=e,a.async=!0,a.id="_uasdk",
+    a.rel=t,r.head.appendChild(a)}(window,document,'https://aswpsdkus.com/notify/v1/ua-sdk.min.js',
+      'UA', {
+        
+        // Only needed when used on insecure hosts:
+        secureIframeUrl: '../../src/registration-page.html',
+
+        vapidPublicKey: 'BMbeJ1ehcdb-GsYBIB32YtAFKPxa9CNZIQDdLmZhH0kchB5PN_6kr61yGI9E3VnhLYG_Xpy_bpJ3p-57BnCu1qk=',
+        appKey: 'omzMcysgTXe5ihgOxHWwbw',
+        token: 'MTpvbXpNY3lzZ1RYZTVpaGdPeEhXd2J3Om5WUkQxcEJNcW5ac3piT1VvMnhYV0ZEdU5qNlF2Nmx5SVNmQzlvWS1HREk'
       });
 
       UA.then(sdk => {
-        sdk.plugins.load('html-prompt', 'https://aswpsdkus.com/notify/v1/ua-html-prompt.min.js', {
+        sdk.plugins.load('registration-page', 'https://aswpsdkus.com/notify/v1/ua-html-prompt.min.js', {
           stylesheet: 'https://bio\u002Dexorcist.netlify.app/home.css',
           askAgainDelay: 3600,
           auto: true,

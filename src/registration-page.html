@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <!-- 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1610057390.8782036 -->
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opt in to Web Notifications</title>
+  </head>
+
+  <body>
+    <p id="blocked-bubble">Click the lock to display the notification opt-in prompt</p>
+    <div id="registration-page-content">
+      <figure>
+        <img id="notifications-svg" class="svg" src="data:image/svg+xml;base64,PHN2ZyBpZD0id2ViLW9wdGluIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjIgMTEwIj4KICA8cGF0aCBpZD0iZG90IiBkPSJNMTgsMThhMywzLDAsMSwxLTMtMywzLDMsMCwwLDEsMywzIiBzdHlsZT0iZmlsbDojNWI1YjViIi8+CiAgPHBhdGggaWQ9ImRvdC0yIiBkYXRhLW5hbWU9ImRvdCIgZD0iTTI4LDE4YTMsMywwLDEsMS0zLTMsMywzLDAsMCwxLDMsMyIgc3R5bGU9ImZpbGw6IzViNWI1YiIvPjxwYXRoIGlkPSJvdXRsaW5lIiBkPSJNMTA2LjQ5LDVhMy4wOSwzLjA5LDAsMSwwLDAsNi4xOCw5LjMsOS4zLDAsMCwxLDkuMzEsOS4yNlY4Ni4zMmgtNjdhMi4wNiwyLjA2LDAsMSwwLDAsNC4xMmg2N3Y0LjEyYTkuMyw5LjMsMCwwLDEtOS4zMSw5LjI2aC05MUE5LjMsOS4zLDAsMCwxLDYuMiw5NC41NlYyOC42OEgzOC40OGEyLjA2LDIuMDYsMCwxLDAsMC00LjEySDYuMlYyMC40NGE5LjMsOS4zLDAsMCwxLDkuMzEtOS4yNkg0NC42OWEzLjA5LDMuMDksMCwxLDAsMC02LjE4SDE1LjUxQTE1LjUsMTUuNSwwLDAsMCwwLDIwLjQ0Vjk0LjU2QTE1LjUsMTUuNSwwLDAsMCwxNS41MSwxMTBoOTFBMTUuNSwxNS41LDAsMCwwLDEyMiw5NC41NlYyMC40NEExNS41LDE1LjUsMCwwLDAsMTA2LjQ5LDUiIHN0eWxlPSJmaWxsOiM1YjViNWIiLz4KICA8cGF0aCBkPSJNOTUuOTIsMjAuNzdhMi4wNywyLjA3LDAsMCwxLTIsMi4wOEg1Ny4xMmEyLjA3LDIuMDcsMCwwLDEtMi0yLjA4VjEyLjQ2SDc1LjVhMi4wOCwyLjA4LDAsMCwwLDAtNC4xNUg1NS4wOFY2LjIzYTIuMDcsMi4wNywwLDAsMSwyLTIuMDhIOTMuODhhMi4wNywyLjA3LDAsMCwxLDIsMi4wOFpNOTMuODgsMEg1Ny4xMkE2LjE5LDYuMTksMCwwLDAsNTEsNi4yM1YyMC43N0E2LjE5LDYuMTksMCwwLDAsNTcuMTIsMjdIOTMuODhBNi4xOSw2LjE5LDAsMCwwLDEwMCwyMC43N1Y2LjIzQTYuMTksNi4xOSwwLDAsMCw5My44OCwwWiIgc3R5bGU9ImZpbGw6I2ZmZiIvPgo8L3N2Zz4K" alt="Web Notifications" />
+        <img id="notifications-blocked-svg" class="svg" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjEuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IndlYi1vcHRpbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDEyMiAxMjMuMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTIyIDEyMy4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzVCNUI1Qjt9Cgkuc3Qxe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+CjxwYXRoIGlkPSJkb3QiIGNsYXNzPSJzdDAiIGQ9Ik0xOCwzMS4yYzAsMS43LTEuMywzLTMsM3MtMy0xLjMtMy0zczEuMy0zLDMtM1MxOCwyOS42LDE4LDMxLjIiLz4KPHBhdGggaWQ9ImRvdC0yIiBjbGFzcz0ic3QwIiBkPSJNMjgsMzEuMmMwLDEuNy0xLjMsMy0zLDNzLTMtMS4zLTMtM3MxLjMtMywzLTNTMjgsMjkuNiwyOCwzMS4yIi8+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMDYuOCwxOC4yTDEwNi44LDE4LjJsLTMyLjIsMGMtMS43LDAtMy4xLDEuNC0zLjEsMy4xYzAuMSwxLjcsMS40LDMuMSwzLjEsMy4xaDMxLjljNS4xLDAsOS4zLDQuMSw5LjMsOS4zCgl2NjUuOWgtNjdjLTEuMSwwLTIuMSwwLjktMi4xLDIuMWMwLDEuMSwwLjksMi4xLDIuMSwyLjFoNjd2NC4xYzAsNS4xLTQuMiw5LjMtOS4zLDkuM2gtOTFjLTUuMSwwLTkuMy00LjEtOS4zLTkuM3YtNjZoMzIuMwoJYzEuMSwwLDIuMS0wLjksMi4xLTIuMWMwLTEuMS0wLjktMi4xLTIuMS0yLjFINi4ydi00LjFjMC01LjEsNC4yLTkuMyw5LjMtOS4zaDE3LjFjMS43LDAsMy4xLTEuNCwzLjEtMy4xcy0xLjQtMy4xLTMuMS0zLjFIMTUuNQoJQzcsMTguMiwwLDI1LjEsMCwzMy43djc0LjFjMCw4LjUsNywxNS40LDE1LjUsMTUuNGg5MWM4LjUsMCwxNS41LTYuOSwxNS41LTE1LjRWMzMuN0MxMjIsMjUuMiwxMTUuMiwxOC40LDEwNi44LDE4LjJ6Ii8+CjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik02Mi44LDguNWMtMC4zLTIuMi0xLjMtNC4xLTIuOS01LjZjLTEuNy0xLjYtNC0yLjUtNi40LTIuNWMtNC41LDAuMS04LjIsMy41LTguOSw4Yy0yLjgsMC4yLTQuOSwyLjUtNC45LDUuMwoJdjE3LjNjMCwyLjksMi40LDUuMyw1LjMsNS4zaDE3LjRjMi45LDAsNS4zLTIuMyw1LjMtNS4yVjEzLjhDNjcuNywxMSw2NS41LDguNyw2Mi44LDguNXogTTUzLjYsNC41YzEuMywwLDIuNiwwLjUsMy41LDEuNAoJYzAuNywwLjcsMS4yLDEuNiwxLjUsMi42aC05LjlDNDkuNCw2LjIsNTEuMyw0LjYsNTMuNiw0LjV6IE02My43LDMxLjJjMCwwLjctMC42LDEuMi0xLjMsMS4ySDQ1Yy0wLjcsMC0xLjMtMC42LTEuMy0xLjNWMTMuOAoJYzAtMC43LDAuNi0xLjMsMS4zLTEuM2gxNy40YzAuNywwLDEuMywwLjYsMS4zLDEuM1YzMS4yeiIvPgo8Zz4KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik01Ni4xLDIxLjZjMC0xLjMtMS4xLTIuNC0yLjQtMi40cy0yLjQsMS4xLTIuNCwyLjRjMCwwLjgsMC40LDEuNiwxLjEsMnYwLjljMCwwLjcsMC42LDEuMywxLjMsMS4zCgkJczEuMy0wLjYsMS4zLTEuM3YtMC45QzU1LjcsMjMuMiw1Ni4xLDIyLjQsNTYuMSwyMS42eiIvPgo8L2c+CjxnPgoJPHBhdGggZD0iTTcwLjIsNDkuNUg3MGMtMC4zLDAtMC44LTAuMS0xLjItMC45bC0xLjItM2wtMSwwLjljLTAuMSwwLjEtMC41LDAuNS0xLjEsMC41Yy0wLjksMC0xLjYtMC43LTEuNi0xLjZWMzMuOAoJCWMwLTAuOSwwLjctMS42LDEuNi0xLjZjMC4yLDAsMC40LDAuMSwwLjUsMC4xYzAsMCwwLDAsMCwwYzAuMiwwLDAuNCwwLjEsMC42LDAuM2w4LjMsOC40YzAuMSwwLjEsMC4xLDAuMiwwLjIsMC4zCgkJYzAsMCwwLDAuMSwwLjEsMC4xYzAuMSwwLjEsMC4yLDAuNCwwLjIsMC43YzAsMC45LTAuNywxLjYtMS42LDEuNmgtMS4zbDEuMSwyLjdjMC4zLDAuNiwwLDEuNS0wLjcsMS45bC0xLjksMC45CgkJQzcwLjgsNDkuNCw3MC41LDQ5LjUsNzAuMiw0OS41eiBNNjgsNDIuOWMwLjEsMCwwLjIsMCwwLjIsMGMwLjMsMC4xLDAuNiwwLjMsMC43LDAuNmwxLjUsMy43bDEuMi0wLjVsLTEuNS0zLjYKCQljLTAuMS0wLjMtMC4xLTAuNywwLjEtMC45YzAuMi0wLjMsMC41LTAuNCwwLjgtMC40aDEuOGwtNi45LTd2OS43bDEuNC0xLjNDNjcuNSw0Myw2Ny44LDQyLjksNjgsNDIuOXogTTcxLjgsNDcuMgoJCUM3MS44LDQ3LjIsNzEuOCw0Ny4yLDcxLjgsNDcuMkw3MS44LDQ3LjJ6IE02NS45LDMyLjNDNjUuOSwzMi4zLDY1LjksMzIuMyw2NS45LDMyLjNDNjUuOSwzMi4zLDY1LjksMzIuMyw2NS45LDMyLjN6Ii8+CjwvZz4KPC9zdmc+Cg==" alt="Web Notifications" />
+      </figure>
+    </div>
+    <div id="registration-page-footer">
+      <div id="registration-page-message">
+       Opt in to Web Notifications by clicking <strong>Allow</strong> in the prompt
+      </div>
+      <div id="registration-page-gesture">
+        <button id="registration-page-gesture-button">Allow</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<style>
+  *, body, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  html {
+    background: #b5b5b5;
+    color: #666;
+    font: 100%/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+  }
+  #registration-page-content {
+    width: 100%;
+    height: auto;
+  }
+  #registration-page-footer{
+    background: #fbfbfb;
+    padding: 10px;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+  }
+  #registration-page-gesture {
+    text-align: center;
+    width: 100%;
+  }
+  #registration-page-gesture-button {
+    display: none;
+    width: 120px;
+    padding: 12px 0;
+    margin: 10px auto;
+    color: #FFFFFF;
+    background: #033ED0;
+    border-radius: 4px;
+    border: none;
+    font-size: 1em;
+  }
+
+  .svg {
+    display: none;
+    height: auto;
+    margin: 10% auto;
+  }
+
+  #notifications-blocked-svg {
+    width: 35%;
+  }
+
+  #notifications-svg {
+    width: 40%;
+  }
+
+  #blocked-bubble {
+    position: fixed;
+    display: none;
+    padding: 10px;
+    border: 5px solid #242424;
+    color: #FFF;
+    background: #242424;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 0.65em;
+    width: 320px;
+    top: 10px;
+    left: 10px;
+  }
+  #blocked-bubble:before {
+    position: absolute;
+    content: "";
+    top: -15px;
+    bottom: auto;
+    left: auto;
+    right: 265px;
+    border-width: 0 10px 10px;
+    border-style: solid;
+    border-color: #242424 transparent;
+  }
+</style>
+
+
+<script type="text/javascript">
+  // register process
+  function loadRegistrationPage() {
+    //snippet
+    !function(n,r,e,t,c){var i,o="Promise"in n,u={then:function(){return u},catch:function(n){
+    return n(new Error("Airship SDK Error: Unsupported browser")),u}},s=o?new Promise((function(n,r){i=function(e,t){e?r(e):n(t)}})):u
+    ;s._async_setup=function(n){if(o)try{i(null,n(c))}catch(n){i(n)}},n[t]=s;var a=r.createElement("script");a.src=e,a.async=!0,a.id="_uasdk",
+    a.rel=t,r.head.appendChild(a)}(window,document,'https://aswpsdkus.com/notify/v1/ua-sdk.min.js',
+    'UA', {
+        vapidPublicKey: 'BMbeJ1ehcdb-GsYBIB32YtAFKPxa9CNZIQDdLmZhH0kchB5PN_6kr61yGI9E3VnhLYG_Xpy_bpJ3p-57BnCu1qk=',
+        appKey: 'omzMcysgTXe5ihgOxHWwbw',
+        token: 'MTpvbXpNY3lzZ1RYZTVpaGdPeEhXd2J3Om5WUkQxcEJNcW5ac3piT1VvMnhYV0ZEdU5qNlF2Nmx5SVNmQzlvWS1HREk'
+        // You want want to uncomment the following line if you changed the location of the push-worker
+        // and set the path to the correct one
+        // workerUrl: '/push-worker.js' 
+    });
+
+    const message = document.querySelector('#registration-page-message')
+    const gestureButton = document.querySelector('#registration-page-gesture-button')
+    const img = document.querySelector('#notifications-svg')
+    const imgBlocked = document.querySelector('#notifications-blocked-svg')
+    const bubbleText = document.querySelector('#blocked-bubble')
+
+    img.style.display = 'block'
+    imgBlocked.style.display = 'none'
+    bubbleText.style.display = 'none'
+
+    // Post message
+    window.addEventListener(
+      "message",
+      event => {
+        if (
+          event.data.identifier === 'registrationPage'
+        ) {
+
+          const messages = event.data.messages
+          if (messages) {
+            const {message: text, bubble, button, title} = messages;
+            if (text) {
+              message.innerHTML= text
+            }
+            if (bubble) {
+              bubbleText.innerHTML= bubble
+            }
+            if(button) {
+              gestureButton.innerHTML = button
+            }
+            if (title) {
+              document.title = title
+            }
+          }
+          
+        }
+      }
+    )
+
+    if ('permissions' in navigator) {
+      navigator.permissions.query({ name: 'notifications' })
+        .then(permission => {
+          UA.then(sdk => {
+            if (sdk.gestureRequired && Notification.permission === 'default') {
+              gestureButton.style.display = 'block'
+              img.style.width = '30%'
+              gestureButton.addEventListener('click', event => {
+                event.preventDefault()
+                Notification.requestPermission()
+              })
+            } else if (permission.state !== 'denied'){
+              sdk.register().then(() => window.close())
+            } else {
+              img.style.display = 'none'
+              imgBlocked.style.display = 'block'
+              bubbleText.style.display = 'block'
+              if (sdk.gestureRequired) {
+                imgBlocked.style.margin = '14% auto'
+              }
+            }
+
+            permission.onchange = () => {
+              if (permission.state === 'prompt') {
+                loadRegistrationPage()
+              }
+              if (permission.state === 'denied'){
+                window.close()
+              }
+              if (permission.state === 'granted') {
+                sdk.register().then(() => window.close())
+              }
+            }
+          })
+      })
+    }
+  }
+
+  // attach loadRegistrationPage
+  document.addEventListener("DOMContentLoaded", loadRegistrationPage);
+</script>
