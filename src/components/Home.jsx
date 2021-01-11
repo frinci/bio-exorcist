@@ -33,7 +33,7 @@ const Home = () => {
                     </div>
 
                     <div className='buttonBox'>
-                        <a href="popUp" className='register'>Get Notifications from the Afterlife!</a>
+                        <a href="/bio-exorcist/public/registration-page.html" className='register'>Get Notifications from the Afterlife!</a>
                     </div>
 
                 </div>
