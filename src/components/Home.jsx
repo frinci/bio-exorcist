@@ -32,6 +32,10 @@ const Home = () => {
                         <img src={call} alt="Call Betelgeuse! Betelgeuse! Betelgeuse!"/>
                     </div>
 
+                    <div className='buttonBox'>
+                        <a href="popUp" className='register'>Get Notifications from the Afterlife!</a>
+                    </div>
+
                 </div>
             </div>
 
