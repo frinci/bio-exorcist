@@ -64,6 +64,25 @@ span {
     height: 200px
 }
 
+.buttonBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Frijole', cursive;
+    background: #8872C4;
+    border-radius: 3px;
+    height: 40px;
+}
+
+.buttonBox a {
+    text-decoration: none;
+    color: black;
+}
+
+.buttonBox:hover {
+    background: #493385;
+}
+
 .aboutBox {
     display: flex;
     align-items: center;
